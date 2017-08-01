@@ -1,0 +1,20 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/googlemapapi/ReversedGeoCoding.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@Reverse Geo Coding API for Google Maps</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Get reversed geocode for Bedford Avenue</h2>
+<div class="step successful">Given I have an longitude and latitude <span class="step parameter">40.714224,-73.961452</span></div>
+<div class="step successful">When I request google api for geocode with lontitude and latitude</div>
+<div class="step successful">Then I should get response status code <span class="step parameter">200</span></div>
+<div class="step successful">And I should get address <span class="step parameter">277 Bedford Ave, Brooklyn, NY 11211, USA</span></div>
+</div>
+</div>

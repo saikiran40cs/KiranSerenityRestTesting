@@ -1,0 +1,8 @@
+#org.jbehave.core.embedder.StoryManager
+#Tue Jul 25 18:14:40 IST 2017
+stories/weatherapi/CurrentWeather.story=0
+threads=1
+total=5000
+stories/googlemapapi/GeoCoding.story=5000
+threadAverage=5000
+stories/googlemapapi/ReversedGeoCoding.story=0

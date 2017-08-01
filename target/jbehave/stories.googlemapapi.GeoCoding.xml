@@ -1,0 +1,22 @@
+<story path="stories/googlemapapi/GeoCoding.story" title="">
+<meta>
+<property keyword="@" name="Geo" value="coding API for Google Maps"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user of google geo code api</inOrderTo>
+  <asA keyword="I want to">get longitude and latitude</asA>
+  <iWantTo keyword="So that">I can transfer my address</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Get geocode for Amphitheatre Parkway">
+<step outcome="successful">Given I have an address <parameter>1600 Amphitheatre Parkway, Mountain View, CA</parameter></step>
+<step outcome="successful">When I request google api for geocode with address</step>
+<step outcome="successful">Then I should get response status code <parameter>200</parameter></step>
+<step outcome="successful">And I should get longitude <parameter>-122.08561</parameter> and latitude <parameter>37.42241</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="Get geocode for Winnetka">
+<step outcome="successful">Given I have an address <parameter>Winnetka</parameter></step>
+<step outcome="successful">When I request google api for geocode with address</step>
+<step outcome="successful">Then I should get response status code <parameter>200</parameter></step>
+<step outcome="successful">And I should get longitude <parameter>-87.735895</parameter> and latitude <parameter>42.10808340000001</parameter></step>
+</scenario>
+</story>

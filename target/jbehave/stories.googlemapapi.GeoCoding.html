@@ -1,0 +1,27 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/googlemapapi/GeoCoding.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@Geo coding API for Google Maps</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user of google geo code api</div>
+<div class="element asA"><span class="keyword asA">I want to</span> get longitude and latitude</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can transfer my address</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Get geocode for Amphitheatre Parkway</h2>
+<div class="step successful">Given I have an address <span class="step parameter">1600 Amphitheatre Parkway, Mountain View, CA</span></div>
+<div class="step successful">When I request google api for geocode with address</div>
+<div class="step successful">Then I should get response status code <span class="step parameter">200</span></div>
+<div class="step successful">And I should get longitude <span class="step parameter">-122.08561</span> and latitude <span class="step parameter">37.42241</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: Get geocode for Winnetka</h2>
+<div class="step successful">Given I have an address <span class="step parameter">Winnetka</span></div>
+<div class="step successful">When I request google api for geocode with address</div>
+<div class="step successful">Then I should get response status code <span class="step parameter">200</span></div>
+<div class="step successful">And I should get longitude <span class="step parameter">-87.735895</span> and latitude <span class="step parameter">42.10808340000001</span></div>
+</div>
+</div>

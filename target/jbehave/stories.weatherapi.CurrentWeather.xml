@@ -1,0 +1,11 @@
+<story path="stories/weatherapi/CurrentWeather.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">perform an action</asA>
+  <iWantTo keyword="So that">I can achieve a business goal</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Get current weather by city id">
+<step outcome="successful">When I call weather api for <parameter>city with 2172797 id</parameter></step>
+<step outcome="successful">Then weather data should be added</step>
+</scenario>
+</story>
